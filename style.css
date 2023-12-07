@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://bitumer.pl/wp-content/uploads/2022/03/road-gcc6b1814c_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#main-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+#footer-logo {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 200px; /* Zmieniona wartość szerokości obrazu na dwukrotność poprzedniej wartości */
+    height: auto;
+}

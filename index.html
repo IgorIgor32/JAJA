@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, gray 50%, orange 50%);
+        }
+
+        .button {
+            padding: 20px 40px;
+            margin: 10px;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            outline: none;
+            background-color: #fff;
+            color: #f1c40f; /* Kolor żółtego tekstu */
+        }
+    </style>
+    <script>
+        function handleClick(buttonType) {
+            var url = '';
+            switch (buttonType) {
+                case 'wedkarstwo':
+                    url = 'https://igorigor32.github.io/wedkarstwo/1wedkarstwo.html';
+                    break;
+                case 'upalanie':
+                    url = 'https://igorigor32.github.io/2upalanie/2upalanie.html';
+                    break;
+                case 'silownia':
+                    url = 'https://igorigor32.github.io/3silownia/3silownia.html';
+                    break;
+                default:
+                    break;
+            }
+            if (url !== '') {
+                window.location.href = url;
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id="wedkarstwo" class="button" onclick="handleClick('wedkarstwo')">Wedkarstwo</button>
+    <button id="upalanie" class="button" onclick="handleClick('upalanie')">Upalanie</button>
+    <button id="silownia" class="button" onclick="handleClick('silownia')">Siłownia</button>
+</body>
+</html>
